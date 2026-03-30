@@ -313,6 +313,42 @@ const closeWindow = (id) => {
   win.hidden = true;
 };
 
+const guidedSequence = [
+  "lab-window",
+  "travel-window",
+  "soccer-window",
+  "kitchen-window",
+  "teaching-window",
+  "projects-window",
+  "scholarships-window"
+];
+
+let guidedIndex = -1;
+
+const resetGuidedTour = () => {
+  guidedIndex = -1;
+  if (tourButton) {
+    tourButton.textContent = "Start";
+  }
+};
+
+const openGuidedStep = (index) => {
+  guidedSequence.forEach((id) => {
+    if (id !== guidedSequence[index]) {
+      closeWindow(id);
+    }
+  });
+
+  openWindow(guidedSequence[index]);
+
+  if (!tourButton) return;
+  if (index === guidedSequence.length - 1) {
+    tourButton.textContent = "Finish";
+  } else {
+    tourButton.textContent = "Next";
+  }
+};
+
 document.querySelectorAll("[data-open]").forEach((trigger) => {
   trigger.addEventListener("click", () => openWindow(trigger.dataset.open));
 });
@@ -320,6 +356,20 @@ document.querySelectorAll("[data-open]").forEach((trigger) => {
 document.querySelectorAll("[data-close]").forEach((trigger) => {
   trigger.addEventListener("click", () => closeWindow(trigger.dataset.close));
 });
+
+const tourButton = document.getElementById("tour-button");
+if (tourButton) {
+  tourButton.addEventListener("click", () => {
+    if (guidedIndex >= guidedSequence.length - 1) {
+      closeWindow(guidedSequence[guidedSequence.length - 1]);
+      resetGuidedTour();
+      return;
+    }
+
+    guidedIndex += 1;
+    openGuidedStep(guidedIndex);
+  });
+}
 
 windows.forEach((win, index) => {
   if (win.id !== "hero-window") {
