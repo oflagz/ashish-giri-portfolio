@@ -48,7 +48,7 @@
           </button>
           <button class="desktop-icon" type="button" data-open="teaching-window">
             <span class="icon-sprite icon-teaching"></span>
-            <span>Office Hours</span>
+            <span>Tutorials</span>
           </button>
           <button class="desktop-icon" type="button" data-open="projects-window">
             <span class="icon-sprite icon-projects"></span>
@@ -56,7 +56,7 @@
           </button>
           <button class="desktop-icon" type="button" data-open="scholarships-window">
             <span class="icon-sprite icon-awards"></span>
-            <span>Loot Chest</span>
+            <span>Awards</span>
           </button>
         </section>
 
@@ -75,28 +75,29 @@
               <h1>Ashish Giri</h1>
 
               <div class="intro-terminal">
-                <p class="intro-command">$ whereis ashish</p>
-                <p class="intro-response">Not in one place for very long. Usually rotating between these tabs:</p>
+                <p class="intro-command">C:\&gt; find ashish</p>
+                <p class="intro-response">Usually somewhere between these three windows:</p>
               </div>
 
-              <div class="intro-cards">
-                <button class="intro-card pixel-card" type="button" data-open="lab-window">
-                  <span class="intro-tag">LAB MODE</span>
-                  <strong>Trying to understand how mechanochemical engineering can push stem cells toward differentiation in a controllable way.</strong>
+              <div class="scene-stack">
+                <button class="scene-row pixel-card" type="button" data-open="lab-window">
+                  <span class="scene-label">lab.exe</span>
+                  <span class="scene-copy">In the lab, trying to understand how mechanochemical engineering can shape stem cell differentiation.</span>
                 </button>
-                <button class="intro-card pixel-card" type="button" data-open="soccer-window">
-                  <span class="intro-tag">MATCHDAY</span>
-                  <strong>Watching Manchester United and spending a lot of that time wondering how we manage to make everything harder than it needs to be.</strong>
+                <button class="scene-row pixel-card" type="button" data-open="soccer-window">
+                  <span class="scene-label">matchday.exe</span>
+                  <span class="scene-copy">Watching Manchester United, usually with the kind of expression that says this should have been easier.</span>
                 </button>
-                <button class="intro-card pixel-card" type="button" data-open="travel-window">
-                  <span class="intro-tag">LIBRARY / RABBIT HOLE</span>
-                  <strong>Reading about the Nepal-Tibet relationship, history, movement, and the kinds of stories that stick to places.</strong>
+                <button class="scene-row pixel-card" type="button" data-open="travel-window">
+                  <span class="scene-label">library.dat</span>
+                  <span class="scene-copy">In humanities libraries, reading about the Nepal-Tibet relationship and chasing side stories for longer than planned.</span>
                 </button>
               </div>
 
               <div class="hero-actions">
                 <button class="pixel-btn" type="button" data-open="lab-window">Open Research</button>
                 <button class="pixel-btn" type="button" data-open="travel-window">Open Travel Atlas</button>
+                <button class="pixel-btn" type="button" data-open="teaching-window">Open Tutorials</button>
                 <button class="pixel-btn" type="button" data-open="projects-window">Open Build Log</button>
                 <a class="pixel-btn" href="mailto:ashish.giri@mail.mcgill.ca">Email</a>
               </div>
@@ -104,10 +105,10 @@
 
             <div
               class="hero-photo clickable-image"
-              data-image="assets/travel-pictures/photo_2026-03-29_19-42-42.jpg"
-              data-caption="Montreal winter"
+              data-image="assets/travel-pictures/photo_2026-03-29_19-42-06.jpg"
+              data-caption="Ashish silhouette at sunset"
             >
-              <img src="assets/travel-pictures/photo_2026-03-29_19-42-42.jpg" alt="Montreal winter scene" />
+              <img src="assets/travel-pictures/photo_2026-03-29_19-42-06.jpg" alt="Ashish silhouette at sunset" />
             </div>
           </div>
         </section>
@@ -190,7 +191,7 @@
 
         <section class="window floating-window" id="teaching-window" data-window hidden>
           <div class="window-bar green drag-handle">
-            <span>office_hours.arcade</span>
+            <span>tutorials.exe</span>
             <div class="window-controls">
               <button type="button" class="window-dot"></button>
               <button type="button" class="window-dot"></button>
@@ -199,7 +200,7 @@
           </div>
           <div class="window-content work-layout">
             <div class="gallery-header">
-              <h2>Office Hours Arcade</h2>
+              <h2>Tutorial Mode</h2>
               <p>Tutorials, review sessions, grading, machine-shop supervision, and trying to make hard courses feel less hostile.</p>
             </div>
             <div class="work-cards" id="teaching-cards"></div>

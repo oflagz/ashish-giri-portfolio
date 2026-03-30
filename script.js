@@ -42,7 +42,7 @@ const teachingCards = [
   },
   {
     title: "Supplemental Learning Hub",
-    body: "Supplemental Learning Leader from 2022 to 2023. Organized review sessions and office hours that helped move the course average from 65% to 75% in engineering mechanics."
+    body: "Supplemental Learning Leader from 2022 to 2023. Organized review sessions and extra support sessions that helped move the course average from 65% to 75% in engineering mechanics."
   }
 ];
 
@@ -114,7 +114,7 @@ const travelAtlas = [
     note: "Home, mountains, temples, early flights, and the kind of horizon that makes everything else feel smaller.",
     locations: [
       {
-        name: "Annapurna / sunrise layers",
+        name: "Mountain mornings",
         note: "Ridges, first light, and those unreal pink dawn gradients.",
         photos: [
           "photo_2026-03-29_20-56-45.jpg",
@@ -124,7 +124,7 @@ const travelAtlas = [
         ]
       },
       {
-        name: "Annapurna / peaks and trails",
+        name: "Peaks and trails",
         note: "Prayer flags, ridgelines, valley cuts, and one mountain after another.",
         photos: [
           "photo_2026-03-29_20-56-43.jpg",
@@ -134,7 +134,7 @@ const travelAtlas = [
         ]
       },
       {
-        name: "Kathmandu Valley",
+        name: "Temple grounds and in-between moments",
         note: "Temples, airport windows, and quieter corners.",
         photos: [
           "photo_2026-03-29_20-56-36.jpg",
@@ -146,10 +146,10 @@ const travelAtlas = [
   },
   {
     country: "Canada",
-    note: "Montreal, road trips, seasons changing too fast, and the kinds of scenes that made me start taking more pictures.",
+    note: "Road trips, changing seasons, water, skyline, and the kinds of quiet scenes that kept ending up in my camera roll.",
     locations: [
       {
-        name: "Montreal / sidewalks and skyline",
+        name: "Sidewalks and skyline",
         note: "Apartment streets, downtown facades, and city wandering.",
         photos: [
           "photo_2026-03-29_19-43-40.jpg",
@@ -158,7 +158,7 @@ const travelAtlas = [
         ]
       },
       {
-        name: "Canada / water and long looks",
+        name: "Water and long looks",
         note: "Falls, lakes, bridges, and places where I stopped because the light was doing something worth keeping.",
         photos: [
           "photo_2026-03-29_19-43-00.jpg",
@@ -170,7 +170,7 @@ const travelAtlas = [
         ]
       },
       {
-        name: "Canada / seasons and side roads",
+        name: "Seasons and side roads",
         note: "Snow, cherry blossoms, autumn color, deer, and roads that felt like a loading screen.",
         photos: [
           "photo_2026-03-29_19-42-58.jpg",
@@ -188,7 +188,7 @@ const travelAtlas = [
     note: "Old towns, river views, church silhouettes, and streets that looked like they wanted to be walked slowly.",
     locations: [
       {
-        name: "Nuremberg / old town",
+        name: "Old town streets",
         note: "Walls, towers, lanes, and half-timbered geometry.",
         photos: [
           "photo_2026-03-29_19-43-27.jpg",
@@ -200,7 +200,7 @@ const travelAtlas = [
         ]
       },
       {
-        name: "Bamberg / river and street views",
+        name: "River and street views",
         note: "Waterfronts, alleys, bridges, and a softer kind of city light.",
         photos: [
           "photo_2026-03-29_19-43-23.jpg",
@@ -209,7 +209,7 @@ const travelAtlas = [
         ]
       },
       {
-        name: "Germany / night and weather",
+        name: "Night and weather",
         note: "Night skies, rain, and darker moodier frames.",
         photos: [
           "photo_2026-03-29_19-43-33.jpg",
@@ -218,7 +218,7 @@ const travelAtlas = [
         ]
       },
       {
-        name: "Germany / museum grounds",
+        name: "Museum grounds",
         note: "One more frame you flagged so it does not get lost in the wrong country again.",
         photos: [
           "photo_2026-03-29_19-43-30.jpg"
@@ -231,14 +231,14 @@ const travelAtlas = [
     note: "Big skyline energy, pale facades, and castle views that looked unreal in clear light.",
     locations: [
       {
-        name: "Prague / monumental facade",
+        name: "Monumental facade",
         note: "Front-facing city drama.",
         photos: [
           "photo_2026-03-29_19-43-32.jpg"
         ]
       },
       {
-        name: "Prague / castle views",
+        name: "Castle views",
         note: "The wider skyline version.",
         photos: [
           "photo_2026-03-29_19-42-29.jpg",
@@ -252,7 +252,7 @@ const travelAtlas = [
     note: "Vienna meant stained glass, museum facades, and Schonbrunn looking like it was built for a wide lens.",
     locations: [
       {
-        name: "Vienna / interiors and facades",
+        name: "Interiors and facades",
         note: "Church light and museum stone.",
         photos: [
           "photo_2026-03-29_19-43-29.jpg",
@@ -260,7 +260,7 @@ const travelAtlas = [
         ]
       },
       {
-        name: "Vienna / Schonbrunn",
+        name: "Palace grounds",
         note: "Formal symmetry, lawns, and a lot of open sky.",
         photos: [
           "photo_2026-03-29_19-43-04.jpg",
@@ -274,7 +274,7 @@ const travelAtlas = [
     note: "Amsterdam in rain, flowers, canals, and buildings that somehow look composed even when the weather is not.",
     locations: [
       {
-        name: "Amsterdam / canals",
+        name: "Canals",
         note: "Boats, church towers, reflections, and rain-softened water.",
         photos: [
           "photo_2026-03-29_19-43-15.jpg",
@@ -284,7 +284,7 @@ const travelAtlas = [
         ]
       },
       {
-        name: "Amsterdam / street details",
+        name: "Street details",
         note: "Flags, facades, station fronts, and one very orange sky.",
         photos: [
           "photo_2026-03-29_19-43-08.jpg",

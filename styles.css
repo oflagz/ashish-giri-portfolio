@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
   font-family: "IBM Plex Sans", sans-serif;
   color: var(--ink);
-  background: linear-gradient(180deg, #78b8ff 0%, #3d82ef 35%, #214b9c 100%);
+  background: linear-gradient(180deg, #72aaf3 0%, #3d74d8 42%, #204a97 100%);
 }
 
 button,
@@ -30,8 +30,9 @@ button {
   min-height: 100vh;
   overflow: hidden;
   background:
-    radial-gradient(circle at 15% 18%, rgba(255,255,255,0.28), transparent 18%),
-    radial-gradient(circle at 82% 8%, rgba(255,255,255,0.22), transparent 14%);
+    linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.02)),
+    repeating-linear-gradient(180deg, rgba(255,255,255,0.06) 0, rgba(255,255,255,0.06) 2px, transparent 2px, transparent 6px),
+    linear-gradient(180deg, #6fa8f1 0%, #4b82de 45%, #2f5bb2 100%);
 }
 
 .desktop-noise {
@@ -71,7 +72,7 @@ button {
   align-items: center;
   gap: 1rem;
   padding: 0.85rem 1rem;
-  background: linear-gradient(180deg, #f1e6b8, #d4c98d);
+  background: linear-gradient(180deg, #d7d7d7, #a9a9a9);
 }
 
 .system-name,
@@ -111,12 +112,15 @@ button {
   z-index: 10;
   display: grid;
   gap: 0.8rem;
+  max-height: calc(100vh - 12.2rem);
+  overflow-y: auto;
+  padding-right: 0.3rem;
 }
 
 .desktop-icon {
-  width: 116px;
-  padding: 0.8rem 0.55rem;
-  background: rgba(7, 39, 97, 0.36);
+  width: 108px;
+  padding: 0.7rem 0.45rem;
+  background: rgba(19, 61, 145, 0.52);
   color: #fff;
   text-align: center;
 }
@@ -124,8 +128,9 @@ button {
 .desktop-icon span:last-child {
   display: block;
   margin-top: 0.6rem;
-  font-size: 0.52rem;
-  line-height: 1.5;
+  font-size: 0.47rem;
+  line-height: 1.45;
+  word-break: break-word;
 }
 
 .desktop-icon:hover,
@@ -329,8 +334,8 @@ button {
 }
 
 .hero-copy h1 {
-  font-size: clamp(3.5rem, 8vw, 6.4rem);
-  margin-bottom: 0.8rem;
+  font-size: clamp(3.5rem, 8vw, 6.2rem);
+  margin-bottom: 0.9rem;
 }
 
 .intro-terminal,
@@ -362,29 +367,40 @@ button {
   font-size: 1rem;
 }
 
-.intro-cards {
+.scene-stack {
   display: grid;
-  gap: 0.85rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
 }
 
 .pixel-card {
-  padding: 1rem;
+  padding: 0.95rem 1rem;
   text-align: left;
 }
 
-.intro-card strong {
-  display: block;
-  font-size: 1rem;
-  line-height: 1.65;
-  font-weight: 600;
+.scene-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: start;
+  gap: 1rem;
+  background: linear-gradient(180deg, #fff9ea, #f3e7c7);
 }
 
-.intro-tag {
+.scene-label {
   display: inline-block;
-  margin-bottom: 0.8rem;
-  font-size: 0.55rem;
+  padding: 0.45rem 0.55rem;
+  border: 2px solid var(--line);
+  background: #ffe37a;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.53rem;
+  line-height: 1.5;
   color: #9e4a1b;
+}
+
+.scene-copy {
+  display: block;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  font-weight: 600;
 }
 
 .hero-photo {
@@ -407,7 +423,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  margin-top: 1.4rem;
+  margin-top: 1.2rem;
 }
 
 .pixel-btn {
@@ -448,6 +464,7 @@ button {
   text-align: left;
   font-size: 0.56rem;
   line-height: 1.5;
+  background: linear-gradient(180deg, #fff8e2, #ead9a7);
 }
 
 .country-button.active {
@@ -549,7 +566,7 @@ button {
   align-items: center;
   gap: 0.8rem;
   padding: 0.5rem 0.7rem;
-  background: linear-gradient(180deg, #0d3977, #0a1f43);
+  background: linear-gradient(180deg, #c8c8c8, #8e8e8e);
   color: #fff;
 }
 
@@ -569,7 +586,16 @@ button {
 .taskbar-text {
   padding: 0.55rem 0.9rem;
   border: 3px solid #02122c;
-  background: rgba(255,255,255,0.12);
+  background: rgba(25, 46, 85, 0.72);
+}
+
+.desktop-icons::-webkit-scrollbar {
+  width: 10px;
+}
+
+.desktop-icons::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.45);
+  border: 2px solid rgba(14, 26, 62, 0.7);
 }
 
 .lightbox {
@@ -621,9 +647,7 @@ button {
     width: calc(100vw - 220px);
   }
 
-  .intro-cards {
-    grid-template-columns: 1fr;
-  }
+  .scene-row { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 920px) {
