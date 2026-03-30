@@ -529,3 +529,21 @@ if (clock) {
   setInterval(updateClock, 30000);
 }
 
+const visitCount = document.getElementById('visit-count');
+if (visitCount) {
+  const namespace = 'ashishgiri156.github.io';
+  const key = 'ashish-giri-portfolio-visits';
+  fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+    .then((response) => response.json())
+    .then((data) => {
+      if (typeof data.value === 'number') {
+        visitCount.textContent = data.value.toLocaleString();
+      } else {
+        visitCount.textContent = 'n/a';
+      }
+    })
+    .catch(() => {
+      visitCount.textContent = 'n/a';
+    });
+}
+

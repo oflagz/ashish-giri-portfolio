@@ -80,6 +80,14 @@ button { cursor: pointer; }
 
 .system-name { font-size: 0.72rem; }
 .system-status { font-size: 0.54rem; }
+.visit-pill {
+  display: inline-block;
+  margin-left: 0.8rem;
+  padding: 0.45rem 0.55rem;
+  border: 2px solid var(--line);
+  background: rgba(255, 248, 214, 0.95);
+  color: var(--ink);
+}
 
 .desktop-stage {
   position: relative;
@@ -525,6 +533,11 @@ button { cursor: pointer; }
   .two-col,
   .atlas-layout { grid-template-columns: 1fr; }
   .work-cards { grid-template-columns: 1fr; }
+  .visit-pill {
+    display: block;
+    margin: 0.7rem 0 0;
+    width: fit-content;
+  }
 }
 
 @media (max-width: 640px) {
