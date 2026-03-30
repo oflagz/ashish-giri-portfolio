@@ -112,186 +112,90 @@ const travelAtlas = [
   {
     country: "Nepal",
     note: "Home, mountains, temples, early flights, and the kind of horizon that makes everything else feel smaller.",
-    locations: [
-      {
-        name: "Mountain mornings",
-        note: "Ridges, first light, and those unreal pink dawn gradients.",
-        photos: [
-          "photo_2026-03-29_20-56-45.jpg",
-          "photo_2026-03-29_20-56-44.jpg",
-          "photo_2026-03-29_20-56-40.jpg",
-          "photo_2026-03-29_19-42-35.jpg"
-        ]
-      },
-      {
-        name: "Peaks and trails",
-        note: "Prayer flags, ridgelines, valley cuts, and one mountain after another.",
-        photos: [
-          "photo_2026-03-29_20-56-43.jpg",
-          "photo_2026-03-29_20-56-42.jpg",
-          "photo_2026-03-29_20-56-39.jpg",
-          "photo_2026-03-29_20-56-37.jpg"
-        ]
-      },
-      {
-        name: "Temple grounds and in-between moments",
-        note: "Temples, airport windows, and quieter corners.",
-        photos: [
-          "photo_2026-03-29_20-56-36.jpg",
-          "photo_2026-03-29_19-42-23.jpg",
-          "photo_2026-03-29_19-42-21.jpg"
-        ]
-      }
+    photos: [
+      "photo_2026-03-29_20-56-45.jpg",
+      "photo_2026-03-29_20-56-44.jpg",
+      "photo_2026-03-29_20-56-40.jpg",
+      "photo_2026-03-29_19-42-35.jpg",
+      "photo_2026-03-29_20-56-43.jpg",
+      "photo_2026-03-29_20-56-42.jpg",
+      "photo_2026-03-29_20-56-39.jpg",
+      "photo_2026-03-29_20-56-37.jpg",
+      "photo_2026-03-29_20-56-36.jpg",
+      "photo_2026-03-29_19-42-23.jpg",
+      "photo_2026-03-29_19-42-21.jpg"
     ]
   },
   {
     country: "Canada",
     note: "Road trips, changing seasons, water, skyline, and the kinds of quiet scenes that kept ending up in my camera roll.",
-    locations: [
-      {
-        name: "Sidewalks and skyline",
-        note: "Apartment streets, downtown facades, and city wandering.",
-        photos: [
-          "photo_2026-03-29_19-43-40.jpg",
-          "photo_2026-03-29_19-43-36.jpg",
-          "photo_2026-03-29_19-42-42.jpg"
-        ]
-      },
-      {
-        name: "Water and long looks",
-        note: "Falls, lakes, bridges, and places where I stopped because the light was doing something worth keeping.",
-        photos: [
-          "photo_2026-03-29_19-43-00.jpg",
-          "photo_2026-03-29_19-42-47.jpg",
-          "photo_2026-03-29_19-42-44.jpg",
-          "photo_2026-03-29_19-42-11.jpg",
-          "photo_2026-03-29_19-42-04.jpg",
-          "photo_2026-03-29_19-42-02.jpg"
-        ]
-      },
-      {
-        name: "Seasons and side roads",
-        note: "Snow, cherry blossoms, autumn color, deer, and roads that felt like a loading screen.",
-        photos: [
-          "photo_2026-03-29_19-42-58.jpg",
-          "photo_2026-03-29_19-42-41.jpg",
-          "photo_2026-03-29_19-42-07.jpg",
-          "photo_2026-03-29_19-41-59.jpg",
-          "photo_2026-03-29_19-41-57.jpg",
-          "photo_2026-03-29_19-41-55.jpg"
-        ]
-      }
+    photos: [
+      "photo_2026-03-29_19-43-40.jpg",
+      "photo_2026-03-29_19-43-36.jpg",
+      "photo_2026-03-29_19-42-42.jpg",
+      "photo_2026-03-29_19-43-00.jpg",
+      "photo_2026-03-29_19-42-47.jpg",
+      "photo_2026-03-29_19-42-44.jpg",
+      "photo_2026-03-29_19-42-11.jpg",
+      "photo_2026-03-29_19-42-04.jpg",
+      "photo_2026-03-29_19-42-02.jpg",
+      "photo_2026-03-29_19-42-58.jpg",
+      "photo_2026-03-29_19-42-41.jpg",
+      "photo_2026-03-29_19-42-07.jpg",
+      "photo_2026-03-29_19-41-59.jpg",
+      "photo_2026-03-29_19-41-57.jpg",
+      "photo_2026-03-29_19-41-55.jpg"
     ]
   },
   {
     country: "Germany",
     note: "Old towns, river views, church silhouettes, and streets that looked like they wanted to be walked slowly.",
-    locations: [
-      {
-        name: "Old town streets",
-        note: "Walls, towers, lanes, and half-timbered geometry.",
-        photos: [
-          "photo_2026-03-29_19-43-27.jpg",
-          "photo_2026-03-29_19-43-26.jpg",
-          "photo_2026-03-29_19-43-24.jpg",
-          "photo_2026-03-29_19-43-20.jpg",
-          "photo_2026-03-29_19-43-18.jpg",
-          "photo_2026-03-29_19-43-17.jpg"
-        ]
-      },
-      {
-        name: "River and street views",
-        note: "Waterfronts, alleys, bridges, and a softer kind of city light.",
-        photos: [
-          "photo_2026-03-29_19-43-23.jpg",
-          "photo_2026-03-29_19-43-21.jpg",
-          "photo_2026-03-29_19-43-02.jpg"
-        ]
-      },
-      {
-        name: "Night and weather",
-        note: "Night skies, rain, and darker moodier frames.",
-        photos: [
-          "photo_2026-03-29_19-43-33.jpg",
-          "photo_2026-03-29_19-42-56.jpg",
-          "photo_2026-03-29_19-41-50.jpg"
-        ]
-      },
-      {
-        name: "Museum grounds",
-        note: "One more frame you flagged so it does not get lost in the wrong country again.",
-        photos: [
-          "photo_2026-03-29_19-43-30.jpg"
-        ]
-      }
+    photos: [
+      "photo_2026-03-29_19-43-27.jpg",
+      "photo_2026-03-29_19-43-26.jpg",
+      "photo_2026-03-29_19-43-24.jpg",
+      "photo_2026-03-29_19-43-20.jpg",
+      "photo_2026-03-29_19-43-18.jpg",
+      "photo_2026-03-29_19-43-17.jpg",
+      "photo_2026-03-29_19-43-23.jpg",
+      "photo_2026-03-29_19-43-21.jpg",
+      "photo_2026-03-29_19-43-02.jpg",
+      "photo_2026-03-29_19-43-33.jpg",
+      "photo_2026-03-29_19-42-56.jpg",
+      "photo_2026-03-29_19-41-50.jpg",
+      "photo_2026-03-29_19-43-30.jpg"
     ]
   },
   {
     country: "Prague",
     note: "Big skyline energy, pale facades, and castle views that looked unreal in clear light.",
-    locations: [
-      {
-        name: "Monumental facade",
-        note: "Front-facing city drama.",
-        photos: [
-          "photo_2026-03-29_19-43-32.jpg"
-        ]
-      },
-      {
-        name: "Castle views",
-        note: "The wider skyline version.",
-        photos: [
-          "photo_2026-03-29_19-42-29.jpg",
-          "photo_2026-03-29_19-42-25.jpg"
-        ]
-      }
+    photos: [
+      "photo_2026-03-29_19-43-32.jpg",
+      "photo_2026-03-29_19-42-29.jpg",
+      "photo_2026-03-29_19-42-25.jpg"
     ]
   },
   {
     country: "Austria",
     note: "Vienna meant stained glass, museum facades, and Schonbrunn looking like it was built for a wide lens.",
-    locations: [
-      {
-        name: "Interiors and facades",
-        note: "Church light and museum stone.",
-        photos: [
-          "photo_2026-03-29_19-43-29.jpg",
-          "photo_2026-03-29_19-42-30.jpg"
-        ]
-      },
-      {
-        name: "Palace grounds",
-        note: "Formal symmetry, lawns, and a lot of open sky.",
-        photos: [
-          "photo_2026-03-29_19-43-04.jpg",
-          "photo_2026-03-29_19-42-38.jpg"
-        ]
-      }
+    photos: [
+      "photo_2026-03-29_19-43-29.jpg",
+      "photo_2026-03-29_19-42-30.jpg",
+      "photo_2026-03-29_19-43-04.jpg",
+      "photo_2026-03-29_19-42-38.jpg"
     ]
   },
   {
     country: "Netherlands",
     note: "Amsterdam in rain, flowers, canals, and buildings that somehow look composed even when the weather is not.",
-    locations: [
-      {
-        name: "Canals",
-        note: "Boats, church towers, reflections, and rain-softened water.",
-        photos: [
-          "photo_2026-03-29_19-43-15.jpg",
-          "photo_2026-03-29_19-43-13.jpg",
-          "photo_2026-03-29_19-43-12.jpg",
-          "photo_2026-03-29_19-43-10.jpg"
-        ]
-      },
-      {
-        name: "Street details",
-        note: "Flags, facades, station fronts, and one very orange sky.",
-        photos: [
-          "photo_2026-03-29_19-43-08.jpg",
-          "photo_2026-03-29_19-43-05.jpg",
-          "photo_2026-03-29_19-42-26.jpg"
-        ]
-      }
+    photos: [
+      "photo_2026-03-29_19-43-15.jpg",
+      "photo_2026-03-29_19-43-13.jpg",
+      "photo_2026-03-29_19-43-12.jpg",
+      "photo_2026-03-29_19-43-10.jpg",
+      "photo_2026-03-29_19-43-08.jpg",
+      "photo_2026-03-29_19-43-05.jpg",
+      "photo_2026-03-29_19-42-26.jpg"
     ]
   }
 ];
@@ -347,23 +251,13 @@ const renderTravel = () => {
         <h2>${current.country}</h2>
         <p>${current.note}</p>
       </div>
-      <div class="location-grid">
-        ${current.locations
-          .map(
-            (location) => `
-              <section class="location-block">
-                <h3>${location.name}</h3>
-                <p class="location-meta">${location.note}</p>
-                <div class="image-grid">
-                  ${location.photos
-                    .map((file) => createThumb({ file, caption: `${current.country} / ${location.name}` }))
-                    .join("")}
-                </div>
-              </section>
-            `
-          )
-          .join("")}
-      </div>
+      <section class="location-block">
+        <div class="image-grid">
+          ${current.photos
+            .map((file) => createThumb({ file, caption: current.country }))
+            .join("")}
+        </div>
+      </section>
     `;
 
     countryList.querySelectorAll("[data-country]").forEach((button) => {
