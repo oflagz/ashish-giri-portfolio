@@ -536,38 +536,43 @@ if (clock) {
 const visitCount = document.getElementById("visit-count");
 if (visitCount) {
   const updateVisitCount = async () => {
-    const domain = window.location.hostname || "oflagz.github.io";
-    const pagePath = window.location.pathname || "/";
+    const namespace = "oflagz.github.io";
+    const action = "view";
+    const key = "ashish-giri-portfolio";
+    const endpoint = `https://counterapi.com/api/${namespace}/${action}/${key}`;
 
     try {
-      const response = await fetch("https://visitor.6developer.com/visit", {
-        method: "POST",
+      const response = await fetch(endpoint, {
         headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          domain,
-          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-          page_path: pagePath,
-          page_title: document.title,
-          referrer: document.referrer
-        })
+          Accept: "application/json"
+        }
       });
-
       const data = await response.json();
-      if (typeof data.totalCount === "number") {
-        visitCount.textContent = data.totalCount.toLocaleString();
+      if (typeof data.value === "number") {
+        visitCount.textContent = data.value.toLocaleString();
         return;
       }
     } catch {}
 
-    try {
-      const fallback = await fetch("https://api.countapi.xyz/hit/oflagz.github.io/ashish-giri-portfolio-visits");
-      const data = await fallback.json();
-      visitCount.textContent = typeof data.value === "number" ? data.value.toLocaleString() : "n/a";
-    } catch {
+    const callbackName = `counterApiVisitCallback_${Date.now()}`;
+    window[callbackName] = (data) => {
+      if (typeof data?.value === "number") {
+        visitCount.textContent = data.value.toLocaleString();
+      } else {
+        visitCount.textContent = "n/a";
+      }
+      delete window[callbackName];
+    };
+
+    const script = document.createElement("script");
+    script.src = `${endpoint}?callback=${callbackName}`;
+    script.async = true;
+    script.onerror = () => {
       visitCount.textContent = "n/a";
-    }
+      delete window[callbackName];
+      script.remove();
+    };
+    document.body.appendChild(script);
   };
 
   updateVisitCount();
