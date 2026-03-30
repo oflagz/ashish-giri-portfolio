@@ -29,14 +29,14 @@
       </header>
 
       <main class="desktop-stage">
-        <section class="desktop-icons" aria-label="Desktop icons">
+        <section class="desktop-icons" aria-label="Desktop launcher">
           <button class="desktop-icon" type="button" data-open="lab-window">
             <span class="icon-sprite icon-lab"></span>
-            <span>Lab Notes</span>
+            <span>Research</span>
           </button>
           <button class="desktop-icon" type="button" data-open="travel-window">
             <span class="icon-sprite icon-travel"></span>
-            <span>Travel Atlas</span>
+            <span>Travel</span>
           </button>
           <button class="desktop-icon" type="button" data-open="soccer-window">
             <span class="icon-sprite icon-soccer"></span>
@@ -52,7 +52,7 @@
           </button>
           <button class="desktop-icon" type="button" data-open="projects-window">
             <span class="icon-sprite icon-projects"></span>
-            <span>Build Log</span>
+            <span>Projects</span>
           </button>
           <button class="desktop-icon" type="button" data-open="scholarships-window">
             <span class="icon-sprite icon-awards"></span>
@@ -70,45 +70,49 @@
             </div>
           </div>
           <div class="window-content hero-layout">
-            <div class="hero-copy">
-              <p class="tiny-label">PLAYER ONE</p>
-              <h1>Ashish Giri</h1>
-
-              <div class="intro-terminal">
-                <p class="intro-command">C:\&gt; find ashish</p>
-                <p class="intro-response">Usually somewhere between these three windows:</p>
-              </div>
-
-              <div class="scene-stack">
-                <button class="scene-row pixel-card" type="button" data-open="lab-window">
-                  <span class="scene-label">lab.exe</span>
-                  <span class="scene-copy">In the lab, trying to understand how mechanochemical engineering can shape stem cell differentiation.</span>
-                </button>
-                <button class="scene-row pixel-card" type="button" data-open="soccer-window">
-                  <span class="scene-label">matchday.exe</span>
-                  <span class="scene-copy">Watching Manchester United, usually with the kind of expression that says this should have been easier.</span>
-                </button>
-                <button class="scene-row pixel-card" type="button" data-open="travel-window">
-                  <span class="scene-label">library.dat</span>
-                  <span class="scene-copy">In humanities libraries, reading about the Nepal-Tibet relationship and chasing side stories for longer than planned.</span>
-                </button>
-              </div>
-
-              <div class="hero-actions">
-                <button class="pixel-btn" type="button" data-open="lab-window">Open Research</button>
-                <button class="pixel-btn" type="button" data-open="travel-window">Open Travel Atlas</button>
-                <button class="pixel-btn" type="button" data-open="teaching-window">Open Tutorials</button>
-                <button class="pixel-btn" type="button" data-open="projects-window">Open Build Log</button>
-                <a class="pixel-btn" href="mailto:ashish.giri@mail.mcgill.ca">Email</a>
-              </div>
-            </div>
-
             <div
               class="hero-photo clickable-image"
               data-image="assets/travel-pictures/photo_2026-03-29_19-42-06.jpg"
               data-caption="Ashish silhouette at sunset"
             >
               <img src="assets/travel-pictures/photo_2026-03-29_19-42-06.jpg" alt="Ashish silhouette at sunset" />
+              <div class="hero-photo-badge">
+                <span>sunset save file</span>
+              </div>
+            </div>
+
+            <div class="hero-copy">
+              <p class="tiny-label">PLAYER ONE</p>
+              <h1>Ashish Giri</h1>
+              <p class="hero-dek">
+                Find me either in the lab trying to understand how mechanochemical engineering can shape stem cell differentiation,
+                watching Manchester United and regretting that decision in real time, or in humanities libraries reading about the
+                Nepal-Tibet relationship until one rabbit hole turns into six.
+              </p>
+
+              <div class="hero-panels">
+                <button class="scene-row pixel-card" type="button" data-open="lab-window">
+                  <span class="scene-label">lab.exe</span>
+                  <span class="scene-copy">Research across biomaterials, manufacturing, coatings, and machine learning.</span>
+                </button>
+                <button class="scene-row pixel-card" type="button" data-open="soccer-window">
+                  <span class="scene-label">matchday.exe</span>
+                  <span class="scene-copy">Scholes from kathmandu.</span>
+                </button>
+                <button class="scene-row pixel-card" type="button" data-open="travel-window">
+                  <span class="scene-label">atlas.exe</span>
+                  <span class="scene-copy">Trips, landscapes, and the photos I actually wanted to keep.</span>
+                </button>
+              </div>
+
+              <div class="hero-actions">
+                <button class="pixel-btn" type="button" data-open="lab-window">Research</button>
+                <button class="pixel-btn" type="button" data-open="travel-window">Travel Atlas</button>
+                <button class="pixel-btn" type="button" data-open="teaching-window">Tutorials</button>
+                <button class="pixel-btn" type="button" data-open="projects-window">Projects</button>
+                <button class="pixel-btn" type="button" data-open="scholarships-window">Awards</button>
+                <a class="pixel-btn" href="mailto:ashish.giri@mail.mcgill.ca">Email</a>
+              </div>
             </div>
           </div>
         </section>
@@ -227,7 +231,7 @@
 
         <section class="window floating-window" id="scholarships-window" data-window hidden>
           <div class="window-bar gold drag-handle">
-            <span>loot_chest.dat</span>
+            <span>awards.exe</span>
             <div class="window-controls">
               <button type="button" class="window-dot"></button>
               <button type="button" class="window-dot"></button>
@@ -236,7 +240,7 @@
           </div>
           <div class="window-content work-layout">
             <div class="gallery-header">
-              <h2>Loot Chest</h2>
+              <h2>Awards & Scholarships</h2>
               <p>Scholarships and awards that made a real difference in what I could study, build, and say yes to.</p>
             </div>
             <div class="work-cards" id="scholarship-cards"></div>

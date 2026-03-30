@@ -429,8 +429,8 @@ document.querySelectorAll("[data-close]").forEach((trigger) => {
 
 windows.forEach((win, index) => {
   if (win.id !== "hero-window") {
-    win.style.left = `${190 + (index % 3) * 24}px`;
-    win.style.top = `${95 + (index % 4) * 18}px`;
+    win.style.left = `${64 + (index % 3) * 34}px`;
+    win.style.top = `${158 + (index % 4) * 22}px`;
   }
 
   const bar = win.querySelector(".drag-handle");
