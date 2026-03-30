@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ashish Giri.exe</title>
+    <title>Ashish Giri</title>
     <meta
       name="description"
-      content="Interactive retro portfolio of Ashish Giri featuring engineering work, photography, travel, cooking, and soccer."
+      content="Interactive personal site for Ashish Giri with retro desktop windows, travel atlas, cooking gallery, soccer gallery, and photo roll."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,593 +17,223 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="desktop-bg">
-      <div class="scanlines"></div>
-      <header class="desktop-header">
-        <div class="brand-badge">ASHISH OS 2000</div>
-        <div class="status-bar">
-          <span>Mechanical Engineer</span>
-          <span>Research Mode: ON</span>
-          <span>Side Quest Pack: Soccer / Travel / Cooking / Photos</span>
-        </div>
+    <div class="desktop-shell">
+      <div class="desktop-noise"></div>
+
+      <header class="top-strip">
+        <div class="system-name">ASHISH.EXE</div>
+        <div class="system-status">interactive personal archive</div>
       </header>
 
-      <main class="desktop">
-        <section class="window spotlight active-window" id="profile">
-          <div class="window-bar blue">
-            <span>profile.exe</span>
-            <div class="window-buttons">
-              <button type="button" class="bar-btn" aria-label="Focus profile window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus profile window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus profile window"></button>
+      <main class="desktop-stage">
+        <section class="desktop-icons" aria-label="Desktop icons">
+          <button class="desktop-icon" type="button" data-open="about-window">
+            <span class="icon-sprite icon-about"></span>
+            <span>About Me</span>
+          </button>
+          <button class="desktop-icon" type="button" data-open="lab-window">
+            <span class="icon-sprite icon-lab"></span>
+            <span>Lab Notes</span>
+          </button>
+          <button class="desktop-icon" type="button" data-open="travel-window">
+            <span class="icon-sprite icon-travel"></span>
+            <span>Travel Atlas</span>
+          </button>
+          <button class="desktop-icon" type="button" data-open="soccer-window">
+            <span class="icon-sprite icon-soccer"></span>
+            <span>Soccer</span>
+          </button>
+          <button class="desktop-icon" type="button" data-open="kitchen-window">
+            <span class="icon-sprite icon-kitchen"></span>
+            <span>Kitchen</span>
+          </button>
+          <button class="desktop-icon" type="button" data-open="photo-window">
+            <span class="icon-sprite icon-photo"></span>
+            <span>Photo Roll</span>
+          </button>
+          <button class="desktop-icon" type="button" data-open="work-window">
+            <span class="icon-sprite icon-work"></span>
+            <span>Work</span>
+          </button>
+        </section>
+
+        <section class="hero-window window open" id="hero-window" data-window>
+          <div class="window-bar beige drag-handle">
+            <span>home_screen.exe</span>
+            <div class="window-controls">
+              <button type="button" class="window-dot" aria-label="Focus home"></button>
+              <button type="button" class="window-dot" aria-label="Focus home"></button>
+              <button type="button" class="window-dot" aria-label="Focus home"></button>
             </div>
           </div>
-          <div class="window-body hero-grid">
+          <div class="window-content hero-layout">
             <div class="hero-copy">
-              <p class="pixel-label">PLAYER ONE</p>
+              <p class="tiny-label">PLAYER ONE</p>
               <h1>Ashish Giri</h1>
-              <p class="hero-subtitle">
-                Mechanical engineering researcher building biomaterials,
-                manufacturing workflows, and real-world systems with the same
-                curiosity I bring to travel, photography, cooking, and soccer.
+              <p class="hero-text">
+                Find me either in lab trying to understand how to mechanochemically engineer stem cells to control differentiation,
+                or watching Manchester United games although most of the time I'm just frowning on how bad my team plays,
+                or in humanities libraries reading about Nepal-Tibet relationship.
               </p>
-              <div class="speech-bubble">
-                <p>
-                  This version is intentionally more personal: less template,
-                  more scrapbook, more motion, more actual life.
-                </p>
-              </div>
               <div class="hero-actions">
-                <a class="pixel-button primary" href="mailto:ashish.giri@mail.mcgill.ca">Email Me</a>
-                <a
-                  class="pixel-button"
-                  href="https://linkedin.com/ashishgiri"
-                  target="_blank"
-                  rel="noreferrer"
-                  >LinkedIn</a
-                >
-                <button class="pixel-button" type="button" data-open-window="hobbies">
-                  Open Side Quests
-                </button>
+                <button class="pixel-btn" type="button" data-open="about-window">Know Me</button>
+                <button class="pixel-btn" type="button" data-open="travel-window">Open Travel Atlas</button>
+                <a class="pixel-btn" href="mailto:ashish.giri@mail.mcgill.ca">Email</a>
               </div>
             </div>
-
-            <div class="player-card">
-              <div class="avatar-shell clickable-media" data-image="assets/hobbies/portrait-1.jpg" data-caption="Ashish Giri in motion">
-                <img src="assets/hobbies/portrait-1.jpg" alt="Portrait of Ashish Giri walking in soccer jersey" />
-              </div>
-              <div class="player-stats">
-                <h2>Save File</h2>
-                <ul>
-                  <li><strong>Base:</strong> McGill University</li>
-                  <li><strong>Focus:</strong> Biomaterials + Manufacturing</li>
-                  <li><strong>Build:</strong> Researcher / Builder / Mentor</li>
-                  <li><strong>Current Quest:</strong> M.Sc. Thesis</li>
-                </ul>
-              </div>
+            <div class="hero-photo clickable-image" data-image="assets/telegram/photo_2026-03-29_19-41-59.jpg" data-caption="Sunset silhouette">
+              <img src="assets/telegram/photo_2026-03-29_19-41-59.jpg" alt="Ashish Giri silhouette at sunset by the water" />
             </div>
           </div>
         </section>
 
-        <section class="icon-dock">
-          <button class="desktop-icon" type="button" data-open-window="experience">
-            <span class="icon-frame icon-folder"></span>
-            <span>Experience</span>
-          </button>
-          <button class="desktop-icon" type="button" data-open-window="projects">
-            <span class="icon-frame icon-console"></span>
-            <span>Projects</span>
-          </button>
-          <button class="desktop-icon" type="button" data-open-window="photo-lab">
-            <span class="icon-frame icon-photo"></span>
-            <span>Photo Lab</span>
-          </button>
-          <button class="desktop-icon" type="button" data-open-window="hobbies">
-            <span class="icon-frame icon-ball"></span>
-            <span>Side Quests</span>
-          </button>
-        </section>
-
-        <section class="window" id="about">
-          <div class="window-bar green">
+        <section class="window floating-window" id="about-window" data-window hidden>
+          <div class="window-bar green drag-handle">
             <span>about_me.txt</span>
-            <div class="window-buttons">
-              <button type="button" class="bar-btn" aria-label="Focus about window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus about window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus about window"></button>
+            <div class="window-controls">
+              <button type="button" class="window-dot" aria-label="Minimize"></button>
+              <button type="button" class="window-dot" aria-label="Maximize"></button>
+              <button type="button" class="window-dot close-window" data-close="about-window" aria-label="Close"></button>
             </div>
           </div>
-          <div class="window-body about-grid">
-            <div class="terminal-card">
-              <p class="terminal-line">$ whoami</p>
+          <div class="window-content two-col notes-layout">
+            <div class="note-panel prose-panel">
+              <h2>Not a product page</h2>
               <p>
-                A mechanical engineering graduate researcher who likes turning
-                messy, expensive, or slow processes into systems that are
-                faster, cleaner, and easier to work with.
+                This site is less about selling a polished version of me and more about the things I actually keep returning to.
+                Lab work. Football. Libraries. Camera roll. Long rabbit holes. Cooking when I need to reset my brain.
               </p>
-              <p class="terminal-line">$ side_traits</p>
               <p>
-                Photographer. Traveler. Home cook. Soccer player. I like work
-                that feels both rigorous and human.
+                I like people who are deeply technical and still deeply curious about history, politics, stories, cities, food, and why places feel the way they feel.
               </p>
             </div>
-            <div class="achievement-panel">
-              <div class="achievement">
-                <span class="achievement-value">98%</span>
-                <span class="achievement-label">Deep-learning accuracy</span>
-              </div>
-              <div class="achievement">
-                <span class="achievement-value">$30k</span>
-                <span class="achievement-label">Saved with in-house extrusion</span>
-              </div>
-              <div class="achievement">
-                <span class="achievement-value">180</span>
-                <span class="achievement-label">Students taught in one term</span>
-              </div>
-              <div class="achievement">
-                <span class="achievement-value">3</span>
-                <span class="achievement-label">Countries worked across</span>
-              </div>
-            </div>
+            <div class="card-stack" id="about-cards"></div>
           </div>
         </section>
 
-        <section class="window" id="experience">
-          <div class="window-bar red">
-            <span>career_map.map</span>
-            <div class="window-buttons">
-              <button type="button" class="bar-btn" aria-label="Focus experience window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus experience window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus experience window"></button>
+        <section class="window floating-window" id="lab-window" data-window hidden>
+          <div class="window-bar blue drag-handle">
+            <span>lab_notes.log</span>
+            <div class="window-controls">
+              <button type="button" class="window-dot"></button>
+              <button type="button" class="window-dot"></button>
+              <button type="button" class="window-dot close-window" data-close="lab-window"></button>
             </div>
           </div>
-          <div class="window-body">
-            <div class="section-intro">
-              <h2>Work Experience</h2>
+          <div class="window-content two-col">
+            <div class="prose-panel">
+              <h2>What I'm thinking about in the lab</h2>
               <p>
-                Research roles, internships, and engineering work across
-                biomaterials, composites, and computational systems.
+                Right now the question that keeps pulling me back is how to mechanochemically engineer stem cells to influence differentiation,
+                and what that means for biomaterials that do more than just sit there passively.
+              </p>
+              <p>
+                A lot of my work has been about making experimental systems smarter: reducing wasted time, improving workflows,
+                and building things that feel elegant rather than patched together.
               </p>
             </div>
-
-            <div class="timeline">
-              <article class="quest-card reveal">
-                <div class="quest-meta">Sep 2025 - Present | Canada</div>
-                <h3>Graduate Research Assistant</h3>
-                <p class="quest-org">McGill University</p>
-                <ul>
-                  <li>Developing an auxetic gel for post-nucleotomy disc reconstruction.</li>
-                  <li>Achieved 80% retention of adipose-derived stem cells through engineered bio-orthogonal adhesion.</li>
-                  <li>Mentored an undergraduate student building gel-free bio-ink for 3-D organoid printing.</li>
-                </ul>
-              </article>
-              <article class="quest-card reveal">
-                <div class="quest-meta">May 2024 - Aug 2024 | Germany</div>
-                <h3>DAAD RISE Intern</h3>
-                <p class="quest-org">Institute of Bio-polymer</p>
-                <ul>
-                  <li>Built a workflow for dog-bone samples of irradiated PLA and PBS, saving 2.5 months and about $10k.</li>
-                  <li>Designed multi-temperature irradiation testing workflows that cut experiment duration by 2 months.</li>
-                  <li>Investigated stereocomplex phase separation in PLA melt at 270 degrees Celsius.</li>
-                </ul>
-              </article>
-              <article class="quest-card reveal">
-                <div class="quest-meta">May 2022 - Apr 2024 | Canada</div>
-                <h3>MITACS Accelerate Intern</h3>
-                <p class="quest-org">Composite Research Network Lab + Vanderlande</p>
-                <ul>
-                  <li>Developed a low-footprint HDPE-hemp-HDPE biocomposite workflow for luggage handling infrastructure.</li>
-                  <li>Designed an in-house single-screw extrusion system that saved $30k.</li>
-                  <li>Improved carbon-fibre resin infusion efficiency by 20%.</li>
-                </ul>
-              </article>
-              <article class="quest-card reveal">
-                <div class="quest-meta">Nov 2022 - Aug 2023 | USA</div>
-                <h3>Research Intern</h3>
-                <p class="quest-org">Harvard Medical School</p>
-                <ul>
-                  <li>Built a 98% accurate multiclass image classifier for single-cell morphology by translating 3-D cells into 2-D inputs.</li>
-                </ul>
-              </article>
-              <article class="quest-card reveal">
-                <div class="quest-meta">May 2022 - Dec 2022 | Canada</div>
-                <h3>Research Intern</h3>
-                <p class="quest-org">Micro-biome Research Lab</p>
-                <ul>
-                  <li>Coated glass with ZnO nanoparticles to demonstrate 99% antimicrobial resistance.</li>
-                  <li>Created a new sample preparation method for leaching studies in aqueous environments.</li>
-                  <li>Used mass spectrometry and two-way ANOVA to show no statistically significant leaching effect.</li>
-                </ul>
-              </article>
-            </div>
+            <div class="lab-list" id="lab-highlights"></div>
           </div>
         </section>
 
-        <section class="window split-window" id="campus">
-          <div class="window-bar yellow">
-            <span>campus_mode.bin</span>
-            <div class="window-buttons">
-              <button type="button" class="bar-btn" aria-label="Focus campus window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus campus window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus campus window"></button>
+        <section class="window floating-window large-window" id="travel-window" data-window hidden>
+          <div class="window-bar purple drag-handle">
+            <span>travel_atlas.map</span>
+            <div class="window-controls">
+              <button type="button" class="window-dot"></button>
+              <button type="button" class="window-dot"></button>
+              <button type="button" class="window-dot close-window" data-close="travel-window"></button>
             </div>
           </div>
-          <div class="window-body split-grid">
-            <div class="subpanel">
-              <h2>Teaching</h2>
-              <div class="mini-stack">
-                <article class="mini-card reveal">
-                  <h3>McGill University</h3>
-                  <p>Teaching Assistant, Jan 2026 - Present</p>
-                  <p>Weekly tutorials in mechanics and thermodynamics for 72 students.</p>
-                </article>
-                <article class="mini-card reveal">
-                  <h3>McGill University</h3>
-                  <p>Teaching Assistant, Sep 2025 - Dec 2025</p>
-                  <p>Taught statics tutorials for 180 students and supported course material creation.</p>
-                </article>
-                <article class="mini-card reveal">
-                  <h3>UBC</h3>
-                  <p>Teaching Assistant, 2024 and 2023</p>
-                  <p>Led reviews for system dynamics, mechanics, and advanced manufacturing labs.</p>
-                </article>
-                <article class="mini-card reveal">
-                  <h3>Supplemental Learning Hub</h3>
-                  <p>Leader, Sep 2022 - Apr 2023</p>
-                  <p>Helped lift course average from 65% to 75% through review sessions and office hours.</p>
-                </article>
-              </div>
-            </div>
-
-            <div class="subpanel">
-              <h2>Education + Awards</h2>
-              <div class="edu-box reveal">
-                <h3>McGill University</h3>
-                <p>M.Sc. in Mechanical Engineering, Thesis</p>
-                <span>Expected graduation: August 2027</span>
-              </div>
-              <div class="edu-box reveal">
-                <h3>The University of British Columbia</h3>
-                <p>B.A.Sc. in Mechanical Engineering</p>
-                <span>Graduated: June 2025</span>
-              </div>
-              <ul class="badge-list">
-                <li>Graduate Student Scholarship, 28,000 CAD/year</li>
-                <li>Donald A. Wehrung International Student Award, 79,000 CAD/year</li>
-                <li>Dr. Spiro Yannacopoulos Award, 10,000 CAD each</li>
-                <li>RISE Globalink Scholarship, 6,000 CAD</li>
-                <li>Deputy Vice Chancellor's Award, four-time recipient</li>
-              </ul>
-            </div>
+          <div class="window-content atlas-layout">
+            <aside class="country-list" id="country-list" aria-label="Travel countries"></aside>
+            <section class="country-view" id="country-view"></section>
           </div>
         </section>
 
-        <section class="window" id="projects">
-          <div class="window-bar purple">
-            <span>projects.arcade</span>
-            <div class="window-buttons">
-              <button type="button" class="bar-btn" aria-label="Focus projects window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus projects window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus projects window"></button>
+        <section class="window floating-window" id="soccer-window" data-window hidden>
+          <div class="window-bar orange drag-handle">
+            <span>matchday.club</span>
+            <div class="window-controls">
+              <button type="button" class="window-dot"></button>
+              <button type="button" class="window-dot"></button>
+              <button type="button" class="window-dot close-window" data-close="soccer-window"></button>
             </div>
           </div>
-          <div class="window-body">
-            <div class="section-intro">
-              <h2>Projects</h2>
-              <p>
-                Real builds, computational workflows, and designs that made
-                engineering feel tactile and visual.
-              </p>
+          <div class="window-content gallery-window">
+            <div class="gallery-header">
+              <h2>Soccer</h2>
+              <p>The most reliable way to clear my head, compete, and stop overthinking for a while.</p>
             </div>
-            <div class="project-grid">
-              <article class="game-cart reveal">
-                <span class="cart-tag">Python + Blender API</span>
-                <h3>Lead-Shielding Workflow</h3>
-                <p>Automated 3-D facial scan import and mold generation for custom skin-cancer shielding masks, saving about a week of fabrication time.</p>
-              </article>
-              <article class="game-cart reveal">
-                <span class="cart-tag">SolidWorks + ABAQUS</span>
-                <h3>Gearbox Design</h3>
-                <p>Designed a one-stage reduction gearbox for vessel propulsion and used von Mises stress FEA to identify first-failure points.</p>
-              </article>
-              <article class="game-cart reveal">
-                <span class="cart-tag">Lithography + OpenCV</span>
-                <h3>Thermal Micro-Grippers</h3>
-                <p>Built a 10-micrometer thermally actuated micro-gripper to manipulate red blood cells with precision.</p>
-              </article>
-            </div>
+            <div class="image-grid soccer-grid" id="soccer-grid"></div>
           </div>
         </section>
 
-        <section class="window" id="hobbies">
-          <div class="window-bar orange">
-            <span>side_quests.sav</span>
-            <div class="window-buttons">
-              <button type="button" class="bar-btn" aria-label="Focus hobbies window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus hobbies window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus hobbies window"></button>
+        <section class="window floating-window" id="kitchen-window" data-window hidden>
+          <div class="window-bar red drag-handle">
+            <span>kitchen_savefile.recipes</span>
+            <div class="window-controls">
+              <button type="button" class="window-dot"></button>
+              <button type="button" class="window-dot"></button>
+              <button type="button" class="window-dot close-window" data-close="kitchen-window"></button>
             </div>
           </div>
-          <div class="window-body">
-            <div class="section-intro">
-              <h2>Side Quests</h2>
-              <p>
-                Four hobby windows, real images, and actual interaction. Pick a
-                category and explore it like a retro media browser.
-              </p>
+          <div class="window-content gallery-window">
+            <div class="gallery-header">
+              <h2>Cooking</h2>
+              <p>I like cooking for the same reason I like engineering: iteration, instinct, timing, and getting the details right.</p>
             </div>
-
-            <div class="quest-console">
-              <aside class="quest-tabs" role="tablist" aria-label="Hobby categories">
-                <button class="quest-tab active" type="button" role="tab" aria-selected="true" data-hobby="soccer">
-                  Soccer
-                </button>
-                <button class="quest-tab" type="button" role="tab" aria-selected="false" data-hobby="travel">
-                  Travel
-                </button>
-                <button class="quest-tab" type="button" role="tab" aria-selected="false" data-hobby="cooking">
-                  Cooking
-                </button>
-                <button class="quest-tab" type="button" role="tab" aria-selected="false" data-hobby="photography">
-                  Photography
-                </button>
-              </aside>
-
-              <div class="quest-display">
-                <article class="hobby-panel active" data-panel="soccer">
-                  <div class="featured-hobby">
-                    <button
-                      class="featured-shot clickable-media"
-                      type="button"
-                      data-image="assets/hobbies/soccer-1.jpg"
-                      data-caption="Soccer: on the ball and in the moment"
-                    >
-                      <img src="assets/hobbies/soccer-1.jpg" alt="Ashish Giri playing soccer on a field" />
-                    </button>
-                    <div class="featured-copy">
-                      <span class="cart-tag">Competitive / Fast / Social</span>
-                      <h3>Soccer is my reset button</h3>
-                      <p>
-                        It is the cleanest contrast to research life: instinct,
-                        movement, teamwork, and the kind of focus where nothing
-                        else matters for a while.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="thumb-strip">
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/soccer-1.jpg" data-caption="Soccer action shot">
-                      <img src="assets/hobbies/soccer-1.jpg" alt="Soccer action" />
-                    </button>
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/soccer-2.jpg" data-caption="Soccer with community and celebration">
-                      <img src="assets/hobbies/soccer-2.jpg" alt="Soccer with kids and celebration" />
-                    </button>
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/soccer-3.jpg" data-caption="Soccer jersey portrait">
-                      <img src="assets/hobbies/soccer-3.jpg" alt="Ashish Giri in soccer jersey" />
-                    </button>
-                  </div>
-                </article>
-
-                <article class="hobby-panel" data-panel="travel">
-                  <div class="featured-hobby">
-                    <button
-                      class="featured-shot clickable-media"
-                      type="button"
-                      data-image="assets/hobbies/travel-1.jpg"
-                      data-caption="Travel: mountain sunrise view"
-                    >
-                      <img src="assets/hobbies/travel-1.jpg" alt="Mountain landscape from Ashish Giri's travels" />
-                    </button>
-                    <div class="featured-copy">
-                      <span class="cart-tag">Cities / Mountains / Movement</span>
-                      <h3>Travel gives me new visual fuel</h3>
-                      <p>
-                        I like streets, skylines, old architecture, landscapes,
-                        and all the tiny textures that make a place feel like a
-                        place.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="thumb-strip">
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/travel-1.jpg" data-caption="Mountain travel photo">
-                      <img src="assets/hobbies/travel-1.jpg" alt="Mountain travel view" />
-                    </button>
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/travel-2.jpg" data-caption="European old town travel photo">
-                      <img src="assets/hobbies/travel-2.jpg" alt="European old town" />
-                    </button>
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/travel-3.jpg" data-caption="Canal city travel photo">
-                      <img src="assets/hobbies/travel-3.jpg" alt="Canal city travel view" />
-                    </button>
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/travel-4.jpg" data-caption="City waterfront travel photo">
-                      <img src="assets/hobbies/travel-4.jpg" alt="City waterfront" />
-                    </button>
-                  </div>
-                </article>
-
-                <article class="hobby-panel" data-panel="cooking">
-                  <div class="featured-hobby">
-                    <button
-                      class="featured-shot clickable-media"
-                      type="button"
-                      data-image="assets/hobbies/cooking-1.jpg"
-                      data-caption="Cooking: plated steak dinner"
-                    >
-                      <img src="assets/hobbies/cooking-1.jpg" alt="Plated steak dinner cooked by Ashish Giri" />
-                    </button>
-                    <div class="featured-copy">
-                      <span class="cart-tag">Experiment / Iterate / Feed People</span>
-                      <h3>Cooking feels like engineering I can eat</h3>
-                      <p>
-                        The same part of my brain that loves improving systems
-                        also loves balancing texture, timing, heat, and flavor.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="thumb-strip">
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/cooking-1.jpg" data-caption="Steak dinner">
-                      <img src="assets/hobbies/cooking-1.jpg" alt="Steak dinner" />
-                    </button>
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/cooking-2.jpg" data-caption="Spiced chicken dish">
-                      <img src="assets/hobbies/cooking-2.jpg" alt="Spiced chicken dish" />
-                    </button>
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/cooking-3.jpg" data-caption="Pasta dish">
-                      <img src="assets/hobbies/cooking-3.jpg" alt="Pasta dish" />
-                    </button>
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/cooking-4.jpg" data-caption="Skillet dinner">
-                      <img src="assets/hobbies/cooking-4.jpg" alt="Skillet dinner" />
-                    </button>
-                  </div>
-                </article>
-
-                <article class="hobby-panel" data-panel="photography">
-                  <div class="featured-hobby">
-                    <button
-                      class="featured-shot clickable-media"
-                      type="button"
-                      data-image="assets/hobbies/photo-1.jpg"
-                      data-caption="Photography: night architecture scene"
-                    >
-                      <img src="assets/hobbies/photo-1.jpg" alt="Night architecture photograph by Ashish Giri" />
-                    </button>
-                    <div class="featured-copy">
-                      <span class="cart-tag">Light / Atmosphere / Timing</span>
-                      <h3>Photography is how I pay attention</h3>
-                      <p>
-                        I love scenes that feel cinematic: night buildings,
-                        sunsets, water, reflections, quiet streets, and the kind
-                        of frame you almost walk past.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="thumb-strip">
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/photo-1.jpg" data-caption="Night architecture photo">
-                      <img src="assets/hobbies/photo-1.jpg" alt="Night architecture photo" />
-                    </button>
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/photo-2.jpg" data-caption="Waterfall photography">
-                      <img src="assets/hobbies/photo-2.jpg" alt="Waterfall photography" />
-                    </button>
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/photo-3.jpg" data-caption="Sunset silhouette photo">
-                      <img src="assets/hobbies/photo-3.jpg" alt="Sunset silhouette" />
-                    </button>
-                    <button class="thumb-card clickable-media" type="button" data-image="assets/hobbies/photo-4.jpg" data-caption="Autumn reflection photo">
-                      <img src="assets/hobbies/photo-4.jpg" alt="Autumn reflection photo" />
-                    </button>
-                  </div>
-                </article>
-              </div>
-            </div>
+            <div class="image-grid food-grid" id="kitchen-grid"></div>
           </div>
         </section>
 
-        <section class="window" id="photo-lab">
-          <div class="window-bar teal">
-            <span>photo_lab.bmp</span>
-            <div class="window-buttons">
-              <button type="button" class="bar-btn" aria-label="Focus photo lab window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus photo lab window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus photo lab window"></button>
+        <section class="window floating-window" id="photo-window" data-window hidden>
+          <div class="window-bar teal drag-handle">
+            <span>photo_roll.camera</span>
+            <div class="window-controls">
+              <button type="button" class="window-dot"></button>
+              <button type="button" class="window-dot"></button>
+              <button type="button" class="window-dot close-window" data-close="photo-window"></button>
             </div>
           </div>
-          <div class="window-body">
-            <div class="section-intro">
-              <h2>Photo Lab</h2>
-              <p>
-                Click any card to view it full-screen. This is the more
-                cinematic side of the portfolio.
-              </p>
+          <div class="window-content gallery-window">
+            <div class="gallery-header">
+              <h2>Photography</h2>
+              <p>The shots I like most usually have atmosphere: water, night, weather, reflections, or a scene that feels half-quiet and half-cinematic.</p>
             </div>
-
-            <div class="lab-grid">
-              <button class="lab-card clickable-media reveal" type="button" data-image="assets/hobbies/photo-1.jpg" data-caption="Night architecture">
-                <img src="assets/hobbies/photo-1.jpg" alt="Night architecture" />
-                <span>Night architecture</span>
-              </button>
-              <button class="lab-card clickable-media reveal" type="button" data-image="assets/hobbies/travel-1.jpg" data-caption="Mountain sunrise">
-                <img src="assets/hobbies/travel-1.jpg" alt="Mountain sunrise" />
-                <span>Mountain sunrise</span>
-              </button>
-              <button class="lab-card clickable-media reveal" type="button" data-image="assets/hobbies/photo-2.jpg" data-caption="Waterfall long exposure vibe">
-                <img src="assets/hobbies/photo-2.jpg" alt="Waterfall" />
-                <span>Waterfall</span>
-              </button>
-              <button class="lab-card clickable-media reveal" type="button" data-image="assets/hobbies/travel-3.jpg" data-caption="Canal city mood">
-                <img src="assets/hobbies/travel-3.jpg" alt="Canal city" />
-                <span>Canal city</span>
-              </button>
-              <button class="lab-card clickable-media reveal" type="button" data-image="assets/hobbies/photo-3.jpg" data-caption="Sunset silhouette">
-                <img src="assets/hobbies/photo-3.jpg" alt="Sunset silhouette" />
-                <span>Sunset silhouette</span>
-              </button>
-              <button class="lab-card clickable-media reveal" type="button" data-image="assets/hobbies/photo-4.jpg" data-caption="Autumn reflection">
-                <img src="assets/hobbies/photo-4.jpg" alt="Autumn reflection" />
-                <span>Autumn reflection</span>
-              </button>
-            </div>
+            <div class="image-grid photo-grid" id="photo-grid"></div>
           </div>
         </section>
 
-        <section class="window" id="skills">
-          <div class="window-bar blue">
-            <span>skills_inventory.cfg</span>
-            <div class="window-buttons">
-              <button type="button" class="bar-btn" aria-label="Focus skills window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus skills window"></button>
-              <button type="button" class="bar-btn" aria-label="Focus skills window"></button>
+        <section class="window floating-window" id="work-window" data-window hidden>
+          <div class="window-bar gold drag-handle">
+            <span>work_archive.dat</span>
+            <div class="window-controls">
+              <button type="button" class="window-dot"></button>
+              <button type="button" class="window-dot"></button>
+              <button type="button" class="window-dot close-window" data-close="work-window"></button>
             </div>
           </div>
-          <div class="window-body skill-layout">
-            <div class="inventory-card reveal">
-              <h3>Programming</h3>
-              <div class="chip-set">
-                <span>Python</span>
-                <span>C++</span>
-              </div>
+          <div class="window-content work-layout">
+            <div class="gallery-header">
+              <h2>Work</h2>
+              <p>The technical side is still here, just without turning the whole site into a brochure.</p>
             </div>
-            <div class="inventory-card reveal">
-              <h3>Software</h3>
-              <div class="chip-set">
-                <span>SolidWorks</span>
-                <span>Blender</span>
-                <span>ABAQUS</span>
-                <span>Origin</span>
-                <span>Microsoft Office</span>
-              </div>
-            </div>
-            <div class="inventory-card reveal">
-              <h3>Engineering</h3>
-              <div class="chip-set">
-                <span>Mechanical Testing</span>
-                <span>3-D Modeling</span>
-                <span>3-D Printing</span>
-                <span>Engineering Drawing</span>
-                <span>Finite Element Analysis</span>
-                <span>Machine Learning</span>
-              </div>
-            </div>
-            <div class="inventory-card reveal">
-              <h3>Soft Skills</h3>
-              <div class="chip-set">
-                <span>Leadership</span>
-                <span>Collaboration</span>
-                <span>Communication</span>
-                <span>Adaptability</span>
-                <span>Critical Thinking</span>
-                <span>Project Management</span>
-              </div>
-            </div>
+            <div class="work-cards" id="work-cards"></div>
           </div>
         </section>
       </main>
 
       <footer class="taskbar">
-        <button class="start-button" type="button" data-open-window="profile">Start</button>
-        <div class="taskbar-text">Ashish Giri portfolio loaded successfully</div>
-        <div class="clock">EST</div>
+        <button class="start-btn" type="button" data-open="about-window">Start</button>
+        <div class="taskbar-text">click icons to open windows</div>
+        <div class="clock" id="clock">00:00</div>
       </footer>
     </div>
 
     <div class="lightbox" id="lightbox" hidden>
-      <button class="lightbox-close" type="button" aria-label="Close image viewer">X</button>
-      <figure class="lightbox-figure">
+      <button class="lightbox-close" type="button" id="lightbox-close">X</button>
+      <figure class="lightbox-card">
         <img id="lightbox-image" src="" alt="" />
         <figcaption id="lightbox-caption"></figcaption>
       </figure>
