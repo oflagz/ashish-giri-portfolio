@@ -519,7 +519,7 @@ if (clock) {
 
 const visitCount = document.getElementById("visit-count");
 if (visitCount) {
-  const namespace = "ashishgiri156.github.io";
+  const namespace = "oflagz.github.io";
   const key = "ashish-giri-portfolio-visits";
   fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
     .then((response) => response.json())
